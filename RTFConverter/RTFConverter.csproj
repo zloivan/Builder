@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CC4F43C-E10D-4C55-B52C-FAE602D74F4A}</ProjectGuid>
+    <ProjectGuid>{CAEB0BF5-727B-4E1B-A6A4-5E3C3A8CD3F1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BasicBuilder</RootNamespace>
-    <AssemblyName>BasicBuilder</AssemblyName>
+    <RootNamespace>RTFConverter</RootNamespace>
+    <AssemblyName>RTFConverter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builder.cs" />
-    <Compile Include="ConcreteBuilder.cs" />
-    <Compile Include="Director.cs" />
-    <Compile Include="Product.cs" />
+    <Compile Include="ASCIIConverter.cs" />
+    <Compile Include="PDFConverter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RTFConverter.cs" />
+    <Compile Include="RTFReader.cs" />
+    <Compile Include="TextWidgetConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
